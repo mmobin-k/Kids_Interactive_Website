@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Little Learners Club - An interactive educational website for children to learn the alphabet, numbers, and nursery rhymes.">
+  <title>Little Learners Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="header-inner">
+      <div class="header-badge" aria-hidden="true">LLC</div>
+      <div class="header-text">
+        <h1>Little Learners Club</h1>
+        <p>A safe and fun place to learn</p>
+      </div>
+
+    </div>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="#section-alpha"   class="nav-link active" data-tab="alpha"   aria-current="page">ABC</a></li>
+      <li><a href="#section-nums"    class="nav-link"        data-tab="nums">123</a></li>
+      <li><a href="#section-rhymes"  class="nav-link"        data-tab="rhymes">Rhymes</a></li>
+      <li><a href="#section-quiz"    class="nav-link"        data-tab="quiz">Quiz</a></li>
+      <li><a href="#section-contact" class="nav-link"        data-tab="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" role="main">
+
+    <section id="section-alpha" class="tab-section active" aria-labelledby="alpha-heading">
+      <h2 id="alpha-heading" class="section-title">The Alphabet</h2>
+      <p class="section-desc">Click any letter to learn more and hear how it sounds.</p>
+      <div class="alpha-grid" id="alphaGrid" role="list" aria-label="Alphabet cards"></div>
+    </section>
+
+    <section id="section-nums" class="tab-section" aria-labelledby="nums-heading" aria-hidden="true">
+      <h2 id="nums-heading" class="section-title">Numbers 0 to 10</h2>
+      <p class="section-desc">Click a number card to see its image and play the audio.</p>
+      <div class="num-grid" id="numGrid" role="list" aria-label="Number cards"></div>
+    </section>
+
+    <section id="section-rhymes" class="tab-section" aria-labelledby="rhymes-heading" aria-hidden="true">
+      <h2 id="rhymes-heading" class="section-title">Nursery Rhymes</h2>
+      <p class="section-desc">Open a rhyme to read along and play the audio.</p>
+
+      <figure class="video-placeholder" aria-label="Video placeholder">
+        <div class="video-box" role="img" aria-label="Video placeholder for nursery rhyme sing-along">
+          <div class="video-icon" aria-hidden="true">
+            <span class="video-triangle">&#9654;</span>
+          </div>
+          <p class="video-caption-top">Sing-Along Video</p>
+        </div>
+        <figcaption>
+          Nursery rhyme sing-along video. Replace <code>src</code> with your video file.
+          Transcript is shown below each rhyme.
+        </figcaption>
+      </figure>
+
+      <div class="rhyme-list" id="rhymeList"></div>
+    </section>
+
+    <section id="section-quiz" class="tab-section" aria-labelledby="quiz-heading" aria-hidden="true">
+      <h2 id="quiz-heading" class="section-title">Quick Quiz</h2>
+      <p class="section-desc">Test what you have learned. Answer the question below.</p>
+      <div class="quiz-box" id="quizBox" aria-live="polite"></div>
+      <div class="quiz-controls">
+        <button class="btn-primary" id="nextQuizBtn" onclick="loadQuiz()">Next Question</button>
+      </div>
+      <div class="quiz-score" id="quizScore" aria-live="polite"></div>
+    </section>
+
+    <section id="section-contact" class="tab-section" aria-labelledby="contact-heading" aria-hidden="true">
+      <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+      <p class="section-desc">Have a suggestion or want to share feedback? Fill in the form below.</p>
+
+      <div class="form-success" id="formSuccess" role="alert" aria-hidden="true">
+        <strong>Thank you!</strong> Your message has been received. We will get back to you soon.
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate aria-label="Contact form">
+
+        <div class="form-group">
+          <label for="fieldName">Your Name <span class="required" aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="fieldName"
+            name="name"
+            placeholder="e.g. Sarah"
+            autocomplete="name"
+            aria-required="true"
+            aria-describedby="nameError"
+          >
+          <span class="field-error" id="nameError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="fieldEmail">Email Address <span class="required" aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="fieldEmail"
+            name="email"
+            placeholder="e.g. sarah@example.com"
+            autocomplete="email"
+            aria-required="true"
+            aria-describedby="emailError"
+          >
+          <span class="field-error" id="emailError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="fieldAge">Child's Age Group <span class="required" aria-hidden="true">*</span></label>
+          <select id="fieldAge" name="age_group" aria-required="true" aria-describedby="ageError">
+            <option value="">Select an age group</option>
+            <option value="2-3">2 to 3 years</option>
+            <option value="4-5">4 to 5 years</option>
+            <option value="6-7">6 to 7 years</option>
+            <option value="8+">8 years and above</option>
+          </select>
+          <span class="field-error" id="ageError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="fieldMessage">Message <span class="required" aria-hidden="true">*</span></label>
+          <textarea
+            id="fieldMessage"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            aria-required="true"
+            aria-describedby="messageError"
+          ></textarea>
+          <span class="field-error" id="messageError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" id="fieldConsent" name="consent" aria-required="true" aria-describedby="consentError">
+          <label for="fieldConsent">
+            I agree that this information may be used to respond to my enquiry.
+            <span class="required" aria-hidden="true">*</span>
+          </label>
+          <span class="field-error" id="consentError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit">Send Message</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-credits">
+        <h3>Credits &amp; Sources</h3>
+        <ul>
+          <li>Fonts: <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">Google Fonts</a> (Fredoka One, Quicksand) &mdash; Open Font License</li>
+          <li>Nursery rhyme texts: Traditional public domain works</li>
+          <li>Audio: Replace placeholders with original or royalty-free recordings</li>
+          <li>Images: Replace placeholders with original or Creative Commons images</li>
+          <li>No copyrighted media is included in this build</li>
+        </ul>
+      </div>
+      <div class="footer-note">
+        <p>Designed for educational use. No user data is stored or transmitted.</p>
+        <p class="footer-copy">&copy; 2025 Little Learners Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup-overlay" id="popup" role="dialog" aria-modal="true" aria-labelledby="popLabel" aria-hidden="true" onclick="handleOverlayClick(event)">
+    <div class="popup">
+      <button class="popup-close" onclick="closePopup()" aria-label="Close popup">&#x2715;</button>
+
+      <div class="img-placeholder" role="img" aria-label="Image placeholder">
+        <div class="img-icon" aria-hidden="true"></div>
+        <div class="img-path" id="popImgPath">images/letter-a.png</div>
+        <p class="img-alt-note" id="popImgAlt"></p>
+      </div>
+
+      <span class="big-display" id="popDisplay" aria-live="polite"></span>
+      <div class="popup-label" id="popLabel"></div>
+
+      <div class="audio-bar">
+        <button
+          class="play-btn"
+          id="popPlayBtn"
+          onclick="handlePopupPlay(event)"
+          aria-label="Play audio for this item"
+        >&#9654;</button>
+        <div class="audio-label" id="popAudioLabel">
+          Audio placeholder<br>
+          <span id="popAudioPath">audio/letter-a.mp3</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
