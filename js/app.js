@@ -216,7 +216,8 @@ function buildRhymes() {
       '</div>' +
       '<div class="rhyme-body" id="body-' + slugify(r.title) + '" aria-hidden="true">' +
         '<div class="audio-bar">' +
-          '<button class="play-btn" aria-label="Play audio for ' + r.title + '">&#9654;</button>' +          
+          '<button class="play-btn" aria-label="Play audio for ' + r.title + '">&#9654;</button>' +
+          '<button class="stop-btn" aria-label="Stop audio for ' + r.title + '">&#9646;&#9646;</button>' +          
         '</div>' +
         r.lines.replace(/\n/g, '<br>') +        
       '</div>';
@@ -248,8 +249,14 @@ function buildRhymes() {
 
     card.querySelector('.play-btn').onclick = function(e) {
       handleRhymePlay(e, r.audio);
-    };
-
+};
+    card.querySelector('.stop-btn').onclick = function() {
+      if (activeAudio) {
+        activeAudio.pause();
+        activeAudio.currentTime = 0;
+        activeAudio = null;
+      }
+};
     list.appendChild(card);
   });
 }
