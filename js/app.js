@@ -182,7 +182,7 @@ function buildNums() {
         showPopup(
           n.toString(),
           numWords[n],
-          'images/number-' + n + '.png',
+          'images/number-' + n + '.jpg',
           'An illustration showing the number ' + n,
           'audio/number-' + n + '.wav'
         );
@@ -196,9 +196,9 @@ function buildNums() {
           showPopup(
             n.toString(),
             numWords[n],
-            'images/number-' + n + '.png',
+            'images/number-' + n + '.jpg',
             'An illustration showing the number ' + n,
-            'audio/number-' + n + '.mp3'
+            'audio/number-' + n + '.wav'
           );
         }
       };
