@@ -334,58 +334,6 @@ main {
 .num-card:nth-child(4n+3) .big-num { color: var(--green); }
 .num-card:nth-child(4n+4) .big-num { color: var(--purple); }
 
-/* ======================================================
-   VIDEO PLACEHOLDER
-====================================================== */
-.video-placeholder {
-  margin-bottom: 24px;
-}
-
-.video-box {
-  background: #1a1a2e;
-  border-radius: var(--radius);
-  border: var(--border);
-  box-shadow: var(--shadow);
-  height: 170px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.video-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: rgba(249,196,18,0.2);
-  border: 2px solid var(--yellow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-triangle {
-  font-size: 20px;
-  color: var(--yellow);
-  margin-left: 4px;
-}
-
-.video-caption-top {
-  font-family: var(--font-display);
-  font-size: 13px;
-  color: rgba(255,255,255,0.5);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
-.video-placeholder figcaption {
-  font-size: 12px;
-  color: #aaa;
-  margin-top: 8px;
-  line-height: 1.5;
-}
 
 /* ======================================================
    RHYME LIST
@@ -488,6 +436,30 @@ main {
   color: #888;
   font-weight: 700;
   line-height: 1.5;
+}
+.stop-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--red);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--white);
+  flex-shrink: 0;
+  box-shadow: 2px 2px 0 var(--ink);
+  transition: background 0.12s, transform 0.12s;
+  padding: 0;
+  line-height: 1;
+}
+
+.stop-btn:hover,
+.stop-btn:focus {
+  background: #c0392b;
+  transform: scale(1.05);
 }
 
 /* ======================================================
