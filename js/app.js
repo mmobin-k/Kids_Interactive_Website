@@ -73,12 +73,7 @@ var rhymes = [
     title: 'Mary Mary Quite Contrary',
     audio: 'audio/rhyme-mary-mary.mp3',
     lines: 'Mary, Mary, quite contrary,\nHow does your garden grow?\nWith silver bells\nAnd cockle shells,\nAnd pretty maids all in a row.'
-  },
-  {
-    title: 'Humpty Dumpty',
-    audio: 'audio/rhyme-humpty.mp3',
-    lines: "Humpty Dumpty sat on a wall,\nHumpty Dumpty had a great fall.\nAll the king's horses\nAnd all the king's men,\nCouldn't put Humpty together again!"
-  }
+  },  
 ];
 
 var quizBank = [
@@ -92,8 +87,8 @@ var quizBank = [
   {q: 'What comes before the number 8?',          options: ['6', '7', '9', '10'], answer: '7'},
   {q: 'How many fingers are on one hand?',        options: ['4', '6', '5', '3'], answer: '5'},
   {q: 'What is 3 + 3?',                           options: ['5', '6', '7', '8'], answer: '6'},
-  {q: 'Which nursery rhyme has a "little star"?', options: ['Baa Baa Black Sheep', 'Humpty Dumpty', 'Twinkle Twinkle Little Star', 'Jack and Jill'], answer: 'Twinkle Twinkle Little Star'},
-  {q: 'Who fell down a hill in a nursery rhyme?', options: ['Humpty Dumpty', 'Jack and Jill', 'Mary Mary', 'Itsy Bitsy Spider'], answer: 'Jack and Jill'}
+  {q: 'Which nursery rhyme has a "little star"?', options: ['Baa Baa Black Sheep', 'Hickory Dickory Dock', 'Twinkle Twinkle Little Star', 'Jack and Jill'], answer: 'Twinkle Twinkle Little Star'},
+  {q: 'Who fell down a hill in a nursery rhyme?', options: ['Rain', 'Jack and Jill', 'Mary Mary', 'Itsy Bitsy Spider'], answer: 'Jack and Jill'}
 ];
 
 var currentAudioPath = null;
