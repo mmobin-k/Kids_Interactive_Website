@@ -362,7 +362,6 @@ function showPopup(display, label, imagePath, imageAlt, audioPath) {
   document.getElementById('popLabel').textContent = label;
   document.getElementById('popImgPath').innerHTML = 
   '<img src="' + imagePath + '" alt="' + label + '">';
-  document.getElementById('popImgAlt').textContent = 'Alt text: ' + imageAlt;
   document.getElementById('popAudioLabel').innerHTML = '';
 
   currentAudioPath = audioPath;
