@@ -6,7 +6,7 @@ All images linked below are sourced from Pixabay and are released under the [Pix
 - **One**: https://pixabay.com/images/download/tbit-bank-notes-941246_1920.jpg
 - **Two**: https://pixabay.com/images/download/surprising_media-geese-8296524_1920.jpg
 - **Three**: https://pixabay.com/images/download/dyadya_lyosha-cute-3273789_1920.jpg
-- **Four**: https://pixabay.com/images/download/steinchen-lucky-clover-437259_1920.jpg
+- **Four**: https://pixabay.com/images/download/samboep-ducks-2472994_1920.jpg
 - **Five**: https://pixabay.com/images/download/misskursovie2013-apples-4118991_1920.jpg
 - **Six**: https://pixabay.com/images/download/anncapictures-easter-2168521_1920.jpg
 - **Seven**: https://pixabay.com/images/download/jameshills-seven-magic-mountains-2650641_1920.jpg
