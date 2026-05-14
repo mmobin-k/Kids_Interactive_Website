@@ -22,8 +22,8 @@ All images linked below are sourced from Pixabay and are released under the [Pix
 - **Rabbit**: https://cdn.pixabay.com/photo/2016/12/04/21/58/rabbit-1882699_1280.jpg
 - **Starfish**: https://pixabay.com/images/download/pexels-starfish-1851289_1920.jpg
 - **Turtle**: https://pixabay.com/images/download/franziska_stier-tortoise-9328571_1920.jpg
-- **Umbrella**: https://pixabay.com/images/download/photostockeditor-umbrella-9710962_1920.jpg
-- **Violin**: https://pixabay.com/images/download/zhivko-street-1906407_1920.jpg
+- **Umbrella**: https://pixabay.com/images/download/kaosreaper-umbrella-2716549_1920.jpg
+- **Violin**: https://pixabay.com/images/download/ilkeval-violin-5741232_1920.jpg
 - **Whale**: https://pixabay.com/images/download/pexels-whale-1850235_1920.jpg
 - **Xylophone**: https://pixabay.com/images/download/alicja-xylophone-10075205_1920.jpg
 - **Yo-yo**: https://pixabay.com/images/download/piviso-yoyo-1960314_1920.jpg
