@@ -221,8 +221,7 @@ function buildRhymes() {
       '</div>' +
       '<div class="rhyme-body" id="body-' + slugify(r.title) + '" aria-hidden="true">' +
         '<div class="audio-bar">' +
-          '<button class="play-btn" aria-label="Play audio for ' + r.title + '">&#9654;</button>' +
-          '<div class="audio-label">Play audio<br>Placeholder: ' + r.audio + '</div>' +
+          '<button class="play-btn" aria-label="Play audio for ' + r.title + '">&#9654;</button>' +          
         '</div>' +
         r.lines.replace(/\n/g, '<br>') +        
       '</div>';
