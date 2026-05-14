@@ -145,7 +145,7 @@ function buildAlpha() {
       showPopup(
         d.l,
         d.l + ' is for ' + d.w,
-        'images/letter-' + letter + '.png',
+        'images/letter-' + letter + '.jpg',
         'A picture of a ' + d.w + ' representing the letter ' + d.l,
         'audio/letter-' + letter + '.wav'
       );
