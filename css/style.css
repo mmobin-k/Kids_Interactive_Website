@@ -447,15 +447,6 @@ main {
 
 .rhyme-card.open .rhyme-body { display: block; }
 
-.rhyme-transcript {
-  margin-top: 12px;
-  padding-top: 10px;
-  border-top: 1px dashed #ddd;
-  font-size: 11px;
-  color: #bbb;
-  font-style: italic;
-}
-
 /* ======================================================
    AUDIO BAR
 ====================================================== */
