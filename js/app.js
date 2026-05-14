@@ -76,7 +76,7 @@ var rhymes = [
   },
   {
     title: 'Humpty Dumpty',
-    audio: 'audio/rhyme-humpty-dumpty.mp3',
+    audio: 'audio/rhyme-humpty.mp3',
     lines: "Humpty Dumpty sat on a wall,\nHumpty Dumpty had a great fall.\nAll the king's horses\nAnd all the king's men,\nCouldn't put Humpty together again!"
   }
 ];
