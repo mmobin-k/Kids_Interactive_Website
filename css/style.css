@@ -461,13 +461,8 @@ main {
 ====================================================== */
 .audio-bar {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  justify-content: center;
   margin-bottom: 14px;
-  background: #f7f7f7;
-  border-radius: 10px;
-  padding: 10px 14px;
-  border: 2px solid #eee;
 }
 
 .play-btn {
