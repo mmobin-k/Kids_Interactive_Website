@@ -224,8 +224,7 @@ function buildRhymes() {
           '<button class="play-btn" aria-label="Play audio for ' + r.title + '">&#9654;</button>' +
           '<div class="audio-label">Play audio<br>Placeholder: ' + r.audio + '</div>' +
         '</div>' +
-        r.lines.replace(/\n/g, '<br>') +
-        '<p class="rhyme-transcript">Transcript: ' + r.lines.replace(/\n/g, ' / ') + '</p>' +
+        r.lines.replace(/\n/g, '<br>') +        
       '</div>';
 
     var header = card.querySelector('.rhyme-header');
