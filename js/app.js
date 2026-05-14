@@ -184,7 +184,7 @@ function buildNums() {
           numWords[n],
           'images/number-' + n + '.png',
           'An illustration showing the number ' + n,
-          'audio/number-' + n + '.mp3'
+          'audio/number-' + n + '.wav'
         );
       };
     })(i);
