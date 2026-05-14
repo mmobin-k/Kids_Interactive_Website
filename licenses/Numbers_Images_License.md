@@ -3,7 +3,7 @@
 All images linked below are sourced from Pixabay and are released under the [Pixabay License](https://pixabay.com/service/license/).
 
 - **Zero**: https://pixabay.com/images/download/mondisso-alphabet-3349829_1920.jpg
-- **One**: https://pixabay.com/images/download/tbit-bank-notes-941246_1920.jpg
+- **One**: https://pixabay.com/images/download/forumkrakow-birds-3360705_1920.jpg
 - **Two**: https://pixabay.com/images/download/surprising_media-geese-8296524_1920.jpg
 - **Three**: https://pixabay.com/images/download/dyadya_lyosha-cute-3273789_1920.jpg
 - **Four**: https://pixabay.com/images/download/samboep-ducks-2472994_1920.jpg
