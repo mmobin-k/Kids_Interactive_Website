@@ -360,7 +360,8 @@ function showPopup(display, label, imagePath, imageAlt, audioPath) {
   document.getElementById('popDisplay').textContent = display;
   document.getElementById('popDisplay').style.color = randomColor;
   document.getElementById('popLabel').textContent = label;
-  document.getElementById('popImgPath').textContent = imagePath;
+  document.getElementById('popImgPath').innerHTML = 
+  '<img src="' + imagePath + '" alt="' + label + '">';
   document.getElementById('popImgAlt').textContent = 'Alt text: ' + imageAlt;
   document.getElementById('popAudioLabel').innerHTML = '';
 
