@@ -147,7 +147,7 @@ function buildAlpha() {
         d.l + ' is for ' + d.w,
         'images/letter-' + letter + '.png',
         'A picture of a ' + d.w + ' representing the letter ' + d.l,
-        'audio/letter-' + letter + '.mp3'
+        'audio/letter-' + letter + '.wav'
       );
     }
 
