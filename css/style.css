@@ -334,6 +334,36 @@ main {
 .num-card:nth-child(4n+3) .big-num { color: var(--green); }
 .num-card:nth-child(4n+4) .big-num { color: var(--purple); }
 
+/* ======================================================
+   STORIES
+====================================================== */
+
+.story-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.story-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+.story-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.video-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #eee;
+}
 
 /* ======================================================
    RHYME LIST
