@@ -50,6 +50,19 @@ Used for educational and non-commercial purposes only. No ownership is claimed o
 
 ---
 
+### Story Videos
+All story videos are sourced from YouTube under the [Creative Commons Attribution License (CC BY)](https://creativecommons.org/licenses/by/3.0/).
+
+| Title | URL |
+|-------|-----|
+| The Very Hungry Caterpillar | https://www.youtube.com/watch?v=i4CPSH6eQWE |
+| The Ant and the Grasshopper | https://www.youtube.com/watch?v=v-z7M3wS3og |
+| The Gingerbread Boy | https://www.youtube.com/watch?v=1LdO5eGCvoA |
+| The Little Red Hen | https://www.youtube.com/watch?v=S9T1rYyHkoY |
+| The Lost Star | https://www.youtube.com/watch?v=841tKhAF2oI |
+
+---
+
 ### Number Images
 All number images are sourced from [Pixabay](https://pixabay.com) and released under the [Pixabay License](https://pixabay.com/service/license/).
 
